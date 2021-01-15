@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### View Demo
 
-Open [https://netflix-clone-10b91.web.app/](Click Here) to view it in the browser.
+[Open Demo](https://netflix-clone-10b91.web.app/) to view it in the browser.
