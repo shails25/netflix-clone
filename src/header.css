@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color:transparent;
+    z-index: 1;
+    transition: all 280ms;
+}
+
+.header_black{
+    background-color: #000;
+}
+
+.header_logo, .header_avatar{
+    width: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.header_avatar{
+    width: 30px;
+}

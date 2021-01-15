@@ -1,0 +1,43 @@
+.poster{
+    margin-right: 20px;
+    transition: transform 480ms ease;
+    position: relative;
+    overflow: clip;
+    background-color: rgb(90, 90, 90);
+}
+
+.poster:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.poster:hover .poster_overlay{
+    bottom: 0;
+}
+
+.poster_large:hover{
+    transform: scale(1.03);
+}
+
+.poster_img{
+    width: 100%;
+    object-fit: cover;
+    min-width: 12rem;
+    display: block;
+}
+
+.poster_overlay{
+    position: absolute;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #fff;
+    bottom: -50%;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0, 0, 0, 0.9));
+    border-left: 3px solid rgb(218, 128, 25);
+    transition: all 480ms ease;
+}
+/* .poster_img_large{
+    min-width: 12rem;
+} */

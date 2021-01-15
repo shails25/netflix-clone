@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Row from './Row';
+import request from './request';
+import Banner from './banner';
+import Header from './header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Banner />
+      {
+        request.map((movie, i)=>{
+          return <Row key={i} title={movie.title} fetchUrl={movie.url} isLarge={i === 0}/>
+        })
+      }
     </div>
   );
 }

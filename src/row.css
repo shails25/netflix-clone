@@ -1,0 +1,29 @@
+.row{
+    margin: 20px;
+}
+
+.row_title{
+    padding-left: 20px;
+    color: #fff;
+}
+
+.row_posters{
+    display: flex;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+    visibility: hidden;
+}
+
+.err_msg {
+    padding: 10px;
+    background: #ee6c6c;
+    margin: 0 20px;
+    color: #fff;
+    font-weight: 700;
+}
